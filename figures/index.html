@@ -90,8 +90,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
 <body>
 
-<a class="skip-link" href="#reading">Skip to content</a><div class="topline"></div><header class="site-head"><div class="site-head__inner"><a href="../index.html" class="wordmark">sand <span class="accent">emissivity</span><span class="wordmark-sub">Five samples · two preparations · a working research paper</span></a><nav class="site-nav" aria-label="Main navigation"><a href="../index.html">Overview</a><a href="../manuscript/index.html">Manuscript</a><a href="../review/index.html">Review</a><a href="../figures/index.html">Figures</a><a href="../questions/index.html">Questions</a><a href="../sources/index.html">Sources</a><a href="../log/index.html">Log</a></nav></div></header>
-<div class="docs"><nav class="docs-nav" aria-label="Site sections"><button class="docs-fold" type="button" data-fold="nav" aria-label="Hide the navigation">‹</button><button class="mobile-menu" type="button" aria-expanded="false" aria-controls="project-links">Browse project sections <span aria-hidden="true">+</span></button><div class="nav-links" id="project-links"><details class="group" open=""><summary class="t">Project</summary><ul><li><a href="../index.html">Overview</a></li><li><a href="../roadmap/index.html">Completion roadmap</a></li></ul></details><details class="group" open=""><summary class="t">Manuscript</summary><ul><li><a href="../manuscript/index.html">Proposed revision</a></li><li><a href="../original/index.html">Original draft</a></li><li><a href="../figures/index.html">Figures</a></li><li><a href="../data/index.html">From figures to data</a></li></ul></details><details class="group" open=""><summary class="t">Scientific review</summary><ul><li><a href="../review/index.html">Full analysis · 22 findings</a></li><li><a href="../questions/index.html">Experimental questions</a></li><li><a href="../sources/index.html">Sources and verification</a></li></ul></details><details class="group" open=""><summary class="t">Project record</summary><ul><li><a href="../downloads/index.html">Downloads</a></li><li><a href="../about/index.html">Method and provenance</a></li><li><a href="../log/index.html">Dated log</a></li></ul></details></div></nav><div class="docs-main">
+<a class="skip-link" href="#reading">Skip to content</a><div class="topline"></div><header class="site-head"><div class="site-head__inner"><a href="../index.html" class="wordmark">sand <span class="accent">emissivity</span><span class="wordmark-sub">Five samples · two preparations · a working research paper</span></a><nav class="site-nav" aria-label="Main navigation"><a href="../index.html">Overview</a><a href="../manuscript/index.html">Manuscript</a><a href="../review/index.html">Review</a><a href="../data/index.html">Data</a><a href="../figures/index.html">Figures</a><a href="../sources/index.html">Sources</a><a href="../log/index.html">Log</a></nav></div></header>
+<div class="docs"><nav class="docs-nav" aria-label="Site sections"><button class="docs-fold" type="button" data-fold="nav" aria-label="Hide the navigation">‹</button><button class="mobile-menu" type="button" aria-expanded="false" aria-controls="project-links">Browse project sections <span aria-hidden="true">+</span></button><div class="nav-links" id="project-links"><details class="group" open=""><summary class="t">Project</summary><ul><li><a href="../index.html">Overview</a></li><li><a href="../roadmap/index.html">Completion roadmap</a></li></ul></details><details class="group" open=""><summary class="t">Manuscript</summary><ul><li><a href="../manuscript/index.html">Proposed revision</a></li><li><a href="../original/index.html">Original draft</a></li><li><a href="../figures/index.html">Figures</a></li><li><a href="../data/index.html">Measurements and analysis</a></li><li><a href="../data-analysis/index.html">Data audit and findings</a></li><li><a href="../explore/index.html">Explore the spectra</a></li></ul></details><details class="group" open=""><summary class="t">Scientific review</summary><ul><li><a href="../review/index.html">Full analysis · 22 findings</a></li><li><a href="../questions/index.html">Experimental questions</a></li><li><a href="../sources/index.html">Sources and verification</a></li></ul></details><details class="group" open=""><summary class="t">Project record</summary><ul><li><a href="../downloads/index.html">Downloads</a></li><li><a href="../about/index.html">Method and provenance</a></li><li><a href="../log/index.html">Dated log</a></li></ul></details></div></nav><div class="docs-main">
 
 <header id="title-block-header">
 <h1 class="title">Original figures</h1>
@@ -101,15 +101,15 @@ document.addEventListener("DOMContentLoaded", function () {
 
 <article class="page-article" id="reading">
 <h1 id="original-figures">Original figures</h1>
-<p>These are browser previews of the two supplied figure PDFs. No curves, labels or shaded bands have been changed. Numerical spectra and plotting code were not included in the project.</p>
-<p>The <a href="../data/index.html">data analysis plan</a> explains what the underlying measurements would let us test, and which files to recover first.</p>
+<p>These are browser previews of the two supplied figure PDFs. No curves, labels or shaded bands have been changed. Native measurements and Irene’s Origin project arrived after the initial review.</p>
+<p>The <a href="../data-analysis/index.html">new data audit</a> traces all fifteen main curves to native signals and provides reconstructed Matplotlib figures. The <a href="../explore/index.html">interactive viewer</a> lets you inspect the derived spectra.</p>
 <h2 id="surface-preparations" class="anchored">Surface preparations</h2>
 <figure>
 <img alt="Five panels comparing the levelled preparation in red and irregular preparation in blue." src="../assets/figures/Bothmeasurements.png">
 <figcaption>Five panels comparing the levelled preparation in red and irregular preparation in blue.</figcaption>
 </figure>
 <p><a href="../downloads/original/Bothmeasurements.pdf">Open the original vector PDF</a>.</p>
-<p><strong>Unresolved:</strong> panel (d), intended as ST4, labels the blue curve “ST1 rough.” Verify the underlying data identity before relabelling it. The shaded bands are undefined in the supplied draft; they cannot yet be described as confidence intervals or expanded uncertainties.</p>
+<p><strong>Resolved numerically:</strong> panel (d)’s blue curve matches ST4 moved, despite its “ST1 rough” label. The new figure corrects the label; this original is unchanged. <strong>Still open:</strong> the complete interpretation of the original shaded bands. Formula fragments and a close numerical band reconstruction identify likely setup/blank contributions, but do not establish a documented coverage factor or complete uncertainty budget.</p>
 <h2 id="comparison-of-the-five-samples" class="anchored">Comparison of the five samples</h2>
 <figure>
 <img alt="Combined curves for ST1–ST5 with an inset showing selected wavelength regions." src="../assets/figures/All_together.png">
@@ -276,7 +276,7 @@ document.addEventListener("DOMContentLoaded", function () {
     anchorJS.add('.anchored');
       var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
       var mailtoRegex = new RegExp(/^mailto:/);
-        var filterRegex = new RegExp("https:\/\/jmigartua\.github\.io\/sand-emissivity-site\/");
+        var filterRegex = new RegExp("^(https://jmigartua\.github\.io/sand-emissivity-site/|http://127\.0\.0\.1(:[0-9]+)?/)");
       var isInternal = (href) => {
           return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
       }

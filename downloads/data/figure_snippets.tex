@@ -1,0 +1,28 @@
+% Include from a LaTeX document in data_analysis_2026-10-16/.
+% Requires \usepackage{graphicx}. Inputs use native OPUS signal precision.
+\begin{figure}
+  \centering
+  \includegraphics[width=\linewidth]{figures/reconstructed_spectra.pdf}
+  \caption{Reconstructed emissivity estimates under the stated reflectance-ratio
+  model with reference reflectance 0.95. All available sample acquisitions are
+  retained: ten per condition except eleven for ST3 moved. Shading denotes
+  acquisition-only standard uncertainty, conditional on independent acquisitions;
+  it excludes calibration, setup and independent preparation variability.}
+  \label{fig:data-reconstruction}
+\end{figure}
+\begin{figure}
+  \centering
+  \includegraphics[width=\linewidth]{figures/combined_levelled.pdf}
+  \caption{Levelled ST1--ST5 spectra reconstructed from native single-beam signals.
+  The right panel expands 3--18~\(\mu\mathrm{m}\). The plotted interval is not a
+  certified spectral acceptance range. No smoothing or physical clipping is applied.}
+  \label{fig:data-combined}
+\end{figure}
+\begin{figure}
+  \centering
+  \includegraphics[width=\linewidth]{figures/preparation_differences.pdf}
+  \caption{Moved-minus-levelled spectral differences. Acquisition-only uncertainty
+  retains the shared-reference contribution once. These measurements do not
+  establish independent preparation variability or isolate a causal roughness effect.}
+  \label{fig:data-differences}
+\end{figure}

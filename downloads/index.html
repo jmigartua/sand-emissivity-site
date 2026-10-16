@@ -90,8 +90,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
 <body>
 
-<a class="skip-link" href="#reading">Skip to content</a><div class="topline"></div><header class="site-head"><div class="site-head__inner"><a href="../index.html" class="wordmark">sand <span class="accent">emissivity</span><span class="wordmark-sub">Five samples · two preparations · a working research paper</span></a><nav class="site-nav" aria-label="Main navigation"><a href="../index.html">Overview</a><a href="../manuscript/index.html">Manuscript</a><a href="../review/index.html">Review</a><a href="../figures/index.html">Figures</a><a href="../questions/index.html">Questions</a><a href="../sources/index.html">Sources</a><a href="../log/index.html">Log</a></nav></div></header>
-<div class="docs"><nav class="docs-nav" aria-label="Site sections"><button class="docs-fold" type="button" data-fold="nav" aria-label="Hide the navigation">‹</button><button class="mobile-menu" type="button" aria-expanded="false" aria-controls="project-links">Browse project sections <span aria-hidden="true">+</span></button><div class="nav-links" id="project-links"><details class="group" open=""><summary class="t">Project</summary><ul><li><a href="../index.html">Overview</a></li><li><a href="../roadmap/index.html">Completion roadmap</a></li></ul></details><details class="group" open=""><summary class="t">Manuscript</summary><ul><li><a href="../manuscript/index.html">Proposed revision</a></li><li><a href="../original/index.html">Original draft</a></li><li><a href="../figures/index.html">Figures</a></li><li><a href="../data/index.html">From figures to data</a></li></ul></details><details class="group" open=""><summary class="t">Scientific review</summary><ul><li><a href="../review/index.html">Full analysis · 22 findings</a></li><li><a href="../questions/index.html">Experimental questions</a></li><li><a href="../sources/index.html">Sources and verification</a></li></ul></details><details class="group" open=""><summary class="t">Project record</summary><ul><li><a href="../downloads/index.html">Downloads</a></li><li><a href="../about/index.html">Method and provenance</a></li><li><a href="../log/index.html">Dated log</a></li></ul></details></div></nav><div class="docs-main">
+<a class="skip-link" href="#reading">Skip to content</a><div class="topline"></div><header class="site-head"><div class="site-head__inner"><a href="../index.html" class="wordmark">sand <span class="accent">emissivity</span><span class="wordmark-sub">Five samples · two preparations · a working research paper</span></a><nav class="site-nav" aria-label="Main navigation"><a href="../index.html">Overview</a><a href="../manuscript/index.html">Manuscript</a><a href="../review/index.html">Review</a><a href="../data/index.html">Data</a><a href="../figures/index.html">Figures</a><a href="../sources/index.html">Sources</a><a href="../log/index.html">Log</a></nav></div></header>
+<div class="docs"><nav class="docs-nav" aria-label="Site sections"><button class="docs-fold" type="button" data-fold="nav" aria-label="Hide the navigation">‹</button><button class="mobile-menu" type="button" aria-expanded="false" aria-controls="project-links">Browse project sections <span aria-hidden="true">+</span></button><div class="nav-links" id="project-links"><details class="group" open=""><summary class="t">Project</summary><ul><li><a href="../index.html">Overview</a></li><li><a href="../roadmap/index.html">Completion roadmap</a></li></ul></details><details class="group" open=""><summary class="t">Manuscript</summary><ul><li><a href="../manuscript/index.html">Proposed revision</a></li><li><a href="../original/index.html">Original draft</a></li><li><a href="../figures/index.html">Figures</a></li><li><a href="../data/index.html">Measurements and analysis</a></li><li><a href="../data-analysis/index.html">Data audit and findings</a></li><li><a href="../explore/index.html">Explore the spectra</a></li></ul></details><details class="group" open=""><summary class="t">Scientific review</summary><ul><li><a href="../review/index.html">Full analysis · 22 findings</a></li><li><a href="../questions/index.html">Experimental questions</a></li><li><a href="../sources/index.html">Sources and verification</a></li></ul></details><details class="group" open=""><summary class="t">Project record</summary><ul><li><a href="../downloads/index.html">Downloads</a></li><li><a href="../about/index.html">Method and provenance</a></li><li><a href="../log/index.html">Dated log</a></li></ul></details></div></nav><div class="docs-main">
 
 <header id="title-block-header">
 <h1 class="title">Downloads</h1>
@@ -119,6 +119,18 @@ document.addEventListener("DOMContentLoaded", function () {
 <li><a href="../downloads/preservation.json">Source preservation manifest</a> · <a href="../downloads/provenance.json">Website provenance</a></li>
 </ul>
 <p>The calculations illustrate uncertainty and spectral coverage; they are not reprocessed measurements of ST1–ST5. Thesis files, CVs, external reviews and third-party papers are not included in these downloads.</p>
+<h2 id="measurement-data-analysis-16-october-2026" class="anchored">Measurement data analysis · 16 October 2026</h2>
+<p>These new outputs are calculated from the native measurements using the stated conditional ratio model. Their acquisition-only uncertainty is not the complete measurement uncertainty. The full report explains the distinction.</p>
+<ul>
+<li><a href="../downloads/data/report.md">Data audit · report Markdown</a> · <a href="../data-analysis/index.html">Read online</a> · <a href="../explore/index.html">Interactive spectra</a></li>
+<li><a href="../downloads/data/spectra.csv">Derived spectra · CSV</a>: all 101 acquisitions represented in condition means, with a separate first-ten reconstruction.</li>
+<li><a href="../downloads/data/band_metrics.csv">Band metrics · CSV</a> · <a href="../downloads/data/preparation_differences.csv">Preparation differences · CSV</a></li>
+<li><a href="../downloads/data/reconstructed_spectra.pdf">Reconstructed spectra · vector PDF</a> · <a href="../downloads/data/combined_levelled.pdf">Combined levelled samples · vector PDF</a></li>
+<li><a href="../downloads/data/preparation_differences.pdf">Preparation differences · vector PDF</a> · <a href="../downloads/data/reference_and_blank.pdf">Reference and blank diagnostics · vector PDF</a></li>
+<li><a href="../downloads/data/st3_extra_acquisition.pdf">ST3 extra acquisition · vector PDF</a> · <a href="../downloads/data/pdf_traceability.pdf">PDF traceability · vector PDF</a></li>
+<li><a href="../downloads/data/figure_snippets.tex">LaTeX figure snippets</a>: place beside the analysis directory’s <code>figures/</code> folder, or adapt the paths to your document.</li>
+</ul>
+<p>Native OPUS files, the Origin project and full extraction evidence remain in the private research repository. The derived CSV values retain numerical precision for reuse; the number of digits does not state absolute measurement accuracy.</p>
 
 </article>
 
@@ -278,7 +290,7 @@ document.addEventListener("DOMContentLoaded", function () {
     anchorJS.add('.anchored');
       var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
       var mailtoRegex = new RegExp(/^mailto:/);
-        var filterRegex = new RegExp("https:\/\/jmigartua\.github\.io\/sand-emissivity-site\/");
+        var filterRegex = new RegExp("^(https://jmigartua\.github\.io/sand-emissivity-site/|http://127\.0\.0\.1(:[0-9]+)?/)");
       var isInternal = (href) => {
           return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
       }

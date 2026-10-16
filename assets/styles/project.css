@@ -85,6 +85,18 @@
 .page-article a { text-underline-offset: 3px; }
 .page-article a:hover { text-decoration: underline; }
 .mobile-menu { display: none; }
+.spectrum-viewer { padding: 20px; margin: 24px 0; background: var(--paper); border: 1px solid var(--line); border-radius: 8px; }
+.spectrum-controls { display: flex; flex-wrap: wrap; gap: 16px; }
+.spectrum-controls label { display: grid; gap: 5px; font-size: 14px; max-width: 100%; }
+.spectrum-controls select { padding: 8px; background: var(--tint); color: var(--ink); border: 1px solid var(--line); border-radius: 4px; font: inherit; max-width: 100%; }
+.spectrum-viewer svg { display: block; width: 100%; height: auto; margin: 12px 0; background: #fcfaf6; color: #352e42; border-radius: 4px; }
+.spectrum-viewer input[type="range"] { width: 100%; accent-color: #79568b; }
+.spectrum-legend { display: flex; flex-wrap: wrap; gap: 8px 18px; font-size: 14px; }
+.spectrum-legend i { display: inline-block; width: 20px; height: 3px; margin-right: 7px; vertical-align: middle; }
+.spectrum-viewer #spectrum-values { overflow-x: auto; }
+.spectrum-viewer #spectrum-values table { min-width: 0; font-size: 13px; }
+.spectrum-viewer #spectrum-values th, .spectrum-viewer #spectrum-values td { padding: 8px; }
+.spectrum-viewer #spectrum-values th { font-size: 11px; letter-spacing: normal; text-transform: none; overflow-wrap: normal; }
 @media(max-width: 760px) {
   .home-grid, .site-foot .foot-grid { grid-template-columns: 1fr; }
   .wordmark { font-size: 24px; }

@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>From figures to data · Sand emissivity – Sand emissivity · research notebook</title>
+<title>Measurements and analysis · Sand emissivity – Sand emissivity · research notebook</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -90,89 +90,47 @@ document.addEventListener("DOMContentLoaded", function () {
 
 <body>
 
-<a class="skip-link" href="#reading">Skip to content</a><div class="topline"></div><header class="site-head"><div class="site-head__inner"><a href="../index.html" class="wordmark">sand <span class="accent">emissivity</span><span class="wordmark-sub">Five samples · two preparations · a working research paper</span></a><nav class="site-nav" aria-label="Main navigation"><a href="../index.html">Overview</a><a href="../manuscript/index.html">Manuscript</a><a href="../review/index.html">Review</a><a href="../figures/index.html">Figures</a><a href="../questions/index.html">Questions</a><a href="../sources/index.html">Sources</a><a href="../log/index.html">Log</a></nav></div></header>
-<div class="docs"><nav class="docs-nav" aria-label="Site sections"><button class="docs-fold" type="button" data-fold="nav" aria-label="Hide the navigation">‹</button><button class="mobile-menu" type="button" aria-expanded="false" aria-controls="project-links">Browse project sections <span aria-hidden="true">+</span></button><div class="nav-links" id="project-links"><details class="group" open=""><summary class="t">Project</summary><ul><li><a href="../index.html">Overview</a></li><li><a href="../roadmap/index.html">Completion roadmap</a></li></ul></details><details class="group" open=""><summary class="t">Manuscript</summary><ul><li><a href="../manuscript/index.html">Proposed revision</a></li><li><a href="../original/index.html">Original draft</a></li><li><a href="../figures/index.html">Figures</a></li><li><a href="../data/index.html">From figures to data</a></li></ul></details><details class="group" open=""><summary class="t">Scientific review</summary><ul><li><a href="../review/index.html">Full analysis · 22 findings</a></li><li><a href="../questions/index.html">Experimental questions</a></li><li><a href="../sources/index.html">Sources and verification</a></li></ul></details><details class="group" open=""><summary class="t">Project record</summary><ul><li><a href="../downloads/index.html">Downloads</a></li><li><a href="../about/index.html">Method and provenance</a></li><li><a href="../log/index.html">Dated log</a></li></ul></details></div></nav><div class="docs-main">
+<a class="skip-link" href="#reading">Skip to content</a><div class="topline"></div><header class="site-head"><div class="site-head__inner"><a href="../index.html" class="wordmark">sand <span class="accent">emissivity</span><span class="wordmark-sub">Five samples · two preparations · a working research paper</span></a><nav class="site-nav" aria-label="Main navigation"><a href="../index.html">Overview</a><a href="../manuscript/index.html">Manuscript</a><a href="../review/index.html">Review</a><a href="../data/index.html">Data</a><a href="../figures/index.html">Figures</a><a href="../sources/index.html">Sources</a><a href="../log/index.html">Log</a></nav></div></header>
+<div class="docs"><nav class="docs-nav" aria-label="Site sections"><button class="docs-fold" type="button" data-fold="nav" aria-label="Hide the navigation">‹</button><button class="mobile-menu" type="button" aria-expanded="false" aria-controls="project-links">Browse project sections <span aria-hidden="true">+</span></button><div class="nav-links" id="project-links"><details class="group" open=""><summary class="t">Project</summary><ul><li><a href="../index.html">Overview</a></li><li><a href="../roadmap/index.html">Completion roadmap</a></li></ul></details><details class="group" open=""><summary class="t">Manuscript</summary><ul><li><a href="../manuscript/index.html">Proposed revision</a></li><li><a href="../original/index.html">Original draft</a></li><li><a href="../figures/index.html">Figures</a></li><li><a href="../data/index.html">Measurements and analysis</a></li><li><a href="../data-analysis/index.html">Data audit and findings</a></li><li><a href="../explore/index.html">Explore the spectra</a></li></ul></details><details class="group" open=""><summary class="t">Scientific review</summary><ul><li><a href="../review/index.html">Full analysis · 22 findings</a></li><li><a href="../questions/index.html">Experimental questions</a></li><li><a href="../sources/index.html">Sources and verification</a></li></ul></details><details class="group" open=""><summary class="t">Project record</summary><ul><li><a href="../downloads/index.html">Downloads</a></li><li><a href="../about/index.html">Method and provenance</a></li><li><a href="../log/index.html">Dated log</a></li></ul></details></div></nav><div class="docs-main">
 
 <header id="title-block-header">
-<h1 class="title">From figures to data</h1>
+<h1 class="title">Measurements and analysis</h1>
 
 </header>
 
 
 <article class="page-article" id="reading">
-<h1 id="from-figures-to-data">From figures to data</h1>
+<h1 id="measurements-and-analysis">Measurements and analysis</h1>
 <p class="deck">
-Recovering the measurements would turn a visual comparison into a reproducible scientific analysis.
+The measurements have arrived. We can now trace the draft figures, quantify spectral differences and examine the measurement model.
 </p>
-<p><strong>Yes: the original data are worth recovering.</strong> They would support better figures in Matplotlib and LaTeX, but the larger opportunity is to test the paper’s claims and understand the limits of the measurement. This is a proposed analysis plan; no numerical experimental spectra have yet been located in this project directory.</p>
-<h2 id="four-levels-of-useful-evidence" class="anchored">Four levels of useful evidence</h2>
-<div aria-label="Scrollable data table" class="table-wrap" role="region" tabindex="0">
-<table class="caption-top" style="width:99%;">
-<colgroup>
-<col style="width: 33%">
-<col style="width: 33%">
-<col style="width: 33%">
-</colgroup>
-<thead>
-<tr class="header">
-<th data-quarto-table-cell-role="th">Material to recover</th>
-<th data-quarto-table-cell-role="th">What it enables</th>
-<th data-quarto-table-cell-role="th">What it cannot establish alone</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>The numerical arrays used in the figures, including the central curves and band boundaries</td>
-<td>Reproduce every curve; verify ST1–ST5 and the ST4 panel; quantify differences and inspect the plotted spectral range</td>
-<td>Whether calibration, averaging or the shaded bands were calculated correctly</td>
-</tr>
-<tr class="even">
-<td>Original sample and reference single-beam spectra, calibration data and reduction scripts</td>
-<td>Reconstruct reflectance; inspect weak reference signals and atmospheric residuals; assess sensitivity to reference calibration and processing</td>
-<td>Independent preparation variability if only one bed was measured per condition</td>
-</tr>
-<tr class="odd">
-<td>Individual acquisitions, reference associations, timestamps and independent bed preparations</td>
-<td>Separate acquisition repeatability, drift, repositioning and preparation effects; retain shared-reference covariance</td>
-<td>Causal attribution to grain size, composition or moisture without corresponding characterization</td>
-</tr>
-<tr class="even">
-<td>Sample descriptions, grain-size and phase measurements, moisture history, bed geometry and acquisition settings</td>
-<td>Interpret spectral structures and define the physical system actually measured</td>
-<td>Unique mineral abundances or optical constants from these spectra without an adequate forward model and additional constraints</td>
-</tr>
-</tbody>
-</table>
+<div class="quicklinks">
+<a href="../data-analysis/index.html">Read the full data audit →</a><a href="../explore/index.html">Explore the spectra →</a><a href="../downloads/index.html#measurement-data-analysis-16-october-2026">Download figures and tables →</a>
 </div>
-<p>Keep the native instrument files as well as readable exports. If individual interferograms were saved, retain them: they could support checks of the transformation and processing. Their absence does not prevent useful analysis of calibrated spectra. A coadded spectrum cannot be unpacked into independent scans after acquisition.</p>
-<h2 id="questions-the-analysis-could-answer" class="anchored">Questions the analysis could answer</h2>
-<h3 id="do-the-two-preparations-actually-agree" class="anchored">Do the two preparations actually agree?</h3>
-<p>Calculate the paired spectral difference for each sample,</p>
-<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">Δ</mi><mi>ε</mi><mo form="prefix" stretchy="false">(</mo><mi>λ</mi><mo form="postfix" stretchy="false">)</mo><mo>=</mo><msub><mi>ε</mi><mrow><mi mathvariant="normal">i</mi><mi mathvariant="normal">r</mi><mi mathvariant="normal">r</mi><mi mathvariant="normal">e</mi><mi mathvariant="normal">g</mi><mi mathvariant="normal">u</mi><mi mathvariant="normal">l</mi><mi mathvariant="normal">a</mi><mi mathvariant="normal">r</mi></mrow></msub><mo form="prefix" stretchy="false">(</mo><mi>λ</mi><mo form="postfix" stretchy="false">)</mo><mo>−</mo><msub><mi>ε</mi><mrow><mi mathvariant="normal">l</mi><mi mathvariant="normal">e</mi><mi mathvariant="normal">v</mi><mi mathvariant="normal">e</mi><mi mathvariant="normal">l</mi><mi mathvariant="normal">l</mi><mi mathvariant="normal">e</mi><mi mathvariant="normal">d</mi></mrow></msub><mo form="prefix" stretchy="false">(</mo><mi>λ</mi><mo form="postfix" stretchy="false">)</mo><mi>.</mi></mrow><annotation encoding="application/x-tex">\Delta\varepsilon(\lambda)=\varepsilon_{\mathrm{irregular}}(\lambda)-\varepsilon_{\mathrm{levelled}}(\lambda).</annotation></semantics></math></p>
-<p>Inspect its wavelength dependence and propagate the uncertainty of the difference, including shared references. Independent bed preparations would allow the preparation variability to be estimated. A claim of practical equivalence also needs a tolerance chosen for the intended application. Neither overlapping shaded bands nor many densely sampled wavelengths supply independent experimental replication.</p>
-<h3 id="which-spectral-differences-are-robust" class="anchored">Which spectral differences are robust?</h3>
-<p>Compare band positions, depths and explicitly defined band averages, with uncertainty and sensitivity to baseline, smoothing and the accepted spectral interval. Track features through independent acquisitions. A feature that changes with reference choice or atmospheric correction deserves different treatment from one that persists across preparations and measurement sessions.</p>
-<p>The 3.5–5 and 8–10 μm regions already discussed in the manuscript provide initial intervals to inspect, rather than proof of particular minerals. Identify phases with independent characterization before interpreting a fitted spectral feature as a mineral abundance.</p>
-<h3 id="where-does-the-measurement-become-unreliable" class="anchored">Where does the measurement become unreliable?</h3>
-<p>Examine sample and reference signal levels, repeatability, drift and calibration validity across the spectrum. Keep out-of-range values visible in diagnostic plots rather than clipping them to the physical interval. Investigate the cause before deciding which wavelengths to exclude.</p>
-<p>This emphasis on the reference and measurement configuration is supported by the integrating-sphere study of <a href="https://tsapps.nist.gov/publication/get_pdf.cfm?pub_id=923806">Blake et al.&nbsp;(2018), especially its experimental and uncertainty discussions</a>. Its instrument-specific uncertainty values should not be assigned to these sand measurements.</p>
-<h3 id="what-changes-for-a-thermal-application" class="anchored">What changes for a thermal application?</h3>
-<p>Evaluate Planck-weighted directional band emissivity at a stated temperature using a spectrum appropriate to that material temperature, and report the measured wavelength coverage. Using only room-temperature spectra at another temperature requires an explicit assumption about temperature dependence. A band result is not total emissivity, and a measurement at one angle does not determine hemispherical emissivity. Angular data or a justified model would still be needed.</p>
-<h2 id="what-to-request-from-the-laboratory" class="anchored">What to request from the laboratory</h2>
-<p>Start with the files that produced the two existing PDFs, then recover earlier processing stages where available:</p>
-<ol type="1">
-<li><strong>Plotting project and data:</strong> scripts, spreadsheets or other source projects, including the curve-to-file mapping and how each shaded band was formed.</li>
-<li><strong>Measurements:</strong> native files and unsmoothed numerical exports for ST1–ST5 in both preparations, plus their sample and reference signals. Include individual acquisitions and independently refilled beds if recorded.</li>
-<li><strong>Reference and settings:</strong> reference calibration spectrum and uncertainty, instrument configuration, acquisition timestamps, spectral resolution, scan/coaddition counts, atmosphere and processing options.</li>
-<li><strong>Sample record:</strong> provenance, preparation, bed depth and backing, moisture conditioning and any composition or grain-size measurements.</li>
-</ol>
-<p>The minimum metadata for a spectrum are a stable measurement ID, sample ID, preparation, independent-bed ID if known, acquisition ID, associated reference ID, spectral coordinate and units, measured quantity and units, and processing state. Record unknown fields as unknown. Distinguish standard deviations, standard uncertainties, expanded uncertainties and band boundaries; include a coverage factor only when it has a documented meaning.</p>
-<p>Wavelength and wavenumber must be identified explicitly. Retain the native grid. Reflectance and emissivity are dimensionless values at corresponding spectral coordinates; integrations must nevertheless use the appropriate coordinate-dependent weighting and spacing.</p>
-<h2 id="a-reproducible-route-to-the-paper" class="anchored">A reproducible route to the paper</h2>
-<p><strong>Preserve → reproduce → diagnose → compare → interpret.</strong> Keep the received files unchanged with hashes. First reproduce the published draft figures closely enough to explain every curve, band and label. Then generate diagnostic plots and assess the proposed corrections before making new scientific claims.</p>
-<p>Use one documented reduction pipeline to supply Matplotlib figures, vector PDF or PGF output for LaTeX, website previews and numerical tables. This keeps the paper and website tied to the same data and avoids manually maintained copies. An interactive spectrum viewer would be useful for inspecting wavelength intervals and comparing samples once the measurements are available.</p>
-<p>Uncertainty calculations should follow a declared measurement model, preserving the relevant correlations. Linear propagation and, where needed, distribution propagation are covered by the <a href="https://www.bipm.org/en/committees/jc/jcgm/publications">JCGM GUM and its supplements</a>. More elaborate statistical fitting should follow the recovery of the acquisition structure, not substitute for it.</p>
-<p>The immediate priority is <strong>the plotting data, original sample/reference measurements and the meaning of the shaded bands</strong>. The <a href="../questions/index.html">experimental questions</a> provide the fuller checklist; the <a href="../roadmap/index.html">roadmap</a> places this work in the completion of the paper.</p>
+<h2 id="what-the-first-analysis-establishes" class="anchored">What the first analysis establishes</h2>
+<ul>
+<li><strong>115 native instrument files and 111 text exports are preserved.</strong> The sample/reference spectra, acquisition settings and coadded interferograms are recoverable.</li>
+<li><strong>All fifteen main curves in both draft PDFs match the native-signal reconstruction.</strong> Panel (d)’s blue curve matches ST4 moved, so the “ST1 rough” label can be corrected in the regenerated figure.</li>
+<li><strong>One export mixes quantities.</strong> <code>st1_muestra0.txt</code> contains reflectance while the other exports contain single-beam signals, and has unrelated text after its data. The intact native single-beam block supplies the analysis.</li>
+<li><strong>ST3 moved has eleven acquisitions.</strong> The first ten best reproduce the draft curve; the new baseline retains all eleven and reports the sensitivity.</li>
+<li><strong>The preparations differ in specific bands.</strong> ST3’s moved-minus-levelled difference averages about 0.0275 over 8–10 μm under the draft’s model. Independent preparation variability and a causal roughness effect are not established.</li>
+<li><strong>The original bands include more than repeatability.</strong> Recovered Origin formula fragments and PDF comparisons point to reference/setup and light-trap contributions. The complete worksheets and calibration interpretation remain to be verified.</li>
+</ul>
+<figure>
+<img alt="The levelled sample spectra reconstructed from native signals." src="../assets/figures/data/combined_levelled.png">
+<figcaption>The levelled sample spectra reconstructed from native signals.</figcaption>
+</figure>
+<h2 id="read-the-numerical-results-with-their-assumptions" class="anchored">Read the numerical results with their assumptions</h2>
+<p>The baseline uses the draft’s expression, with reference reflectance assumed to be 0.95:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mover><mi>ε</mi><mo accent="true">̂</mo></mover><mo form="prefix" stretchy="false">(</mo><mi>λ</mi><mo form="postfix" stretchy="false">)</mo><mo>=</mo><mn>1</mn><mo>−</mo><mn>0.95</mn><mspace width="0.167em"></mspace><mover><mi>S</mi><mo accent="true">¯</mo></mover><mo form="prefix" stretchy="false">(</mo><mi>λ</mi><mo form="postfix" stretchy="false">)</mo><mi>/</mi><mover><mi>F</mi><mo accent="true">¯</mo></mover><mo form="prefix" stretchy="false">(</mo><mi>λ</mi><mo form="postfix" stretchy="false">)</mo><mi>.</mi></mrow><annotation encoding="application/x-tex">\widehat\varepsilon(\lambda)=1-0.95\,\overline S(\lambda)/\overline F(\lambda).</annotation></semantics></math></p>
+<p>The newly plotted uncertainty represents <strong>acquisition repeatability only</strong>, conditional on independent acquisitions. It excludes calibration, setup, drift and independent preparation variability. The opacity and geometry assumptions still matter. Full acquired spectral coverage is not a certified validity interval.</p>
+<p>Band means use wavelength-aware integration. Band uncertainties retain observed cross-wavelength covariance, and differences retain the shared reference. No spectrum has been smoothed or clipped to [0,1]. No mineral identification is inferred from the curve shapes alone.</p>
+<h2 id="the-next-evidence-to-resolve" class="anchored">The next evidence to resolve</h2>
+<p>The native files have settled much of the acquisition question. The remaining priority is the final Origin worksheets, with formulas and comments, so that all stored constants, selected acquisitions and graph bindings can be verified. The available reader cannot fully decode this OPJU project; literal formula recovery is explicitly identified as partial.</p>
+<p>Then resolve the Infragold calibration, the physical meaning of the up/down checks and light-trap treatment, and the sample/preparation record. The <a href="../data-analysis/index.html">full report</a> gives concrete questions and candidate calculations. The earlier request to Irene and the arrival of these data are retained in the <a href="../log/index.html">dated log</a>.</p>
+<h2 id="one-reproducible-route-to-the-paper" class="anchored">One reproducible route to the paper</h2>
+<p>Native files → verified numerical extraction → declared measurement model → quantitative comparisons → Matplotlib figures, vector PDFs, tables and browser exploration.</p>
+<p>The original inputs and initial scientific review remain unchanged. The private repository contains the extraction evidence and executable analysis. The public website offers selected derived data and figures, with their limitations stated alongside them.</p>
 
 </article>
 
@@ -332,7 +290,7 @@ Recovering the measurements would turn a visual comparison into a reproducible s
     anchorJS.add('.anchored');
       var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
       var mailtoRegex = new RegExp(/^mailto:/);
-        var filterRegex = new RegExp("https:\/\/jmigartua\.github\.io\/sand-emissivity-site\/");
+        var filterRegex = new RegExp("^(https://jmigartua\.github\.io/sand-emissivity-site/|http://127\.0\.0\.1(:[0-9]+)?/)");
       var isInternal = (href) => {
           return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
       }
