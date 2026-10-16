@@ -1,0 +1,119 @@
+{
+  "date": "2026-10-16",
+  "originals": [
+    {
+      "path": ".DS_Store",
+      "unchanged": true
+    },
+    {
+      "path": "All_together.pdf",
+      "unchanged": true
+    },
+    {
+      "path": "main.tex",
+      "unchanged": true
+    },
+    {
+      "path": "sample.bib",
+      "unchanged": true
+    },
+    {
+      "path": "Bothmeasurements.pdf",
+      "unchanged": true
+    }
+  ],
+  "all_original_files_unchanged": true,
+  "latex_compiled": true,
+  "pdf_pages": 8,
+  "latex_warnings": [],
+  "bibliography_entries": 12,
+  "cited_entries": 11,
+  "undefined_citations": [],
+  "numerical_checks": {
+    "ratio_gradient_finite_difference": true,
+    "blackbody_normalization": true,
+    "shared_scale_covariance_cancellation": true
+  },
+  "pdf_visual_inspection": {
+    "pages": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "status": "All pages inspected after final compilation; equations, captions, references and page boundaries legible; no clipping or overlap observed. Original figure label and undefined bands remain explicitly disclosed."
+  },
+  "html": {
+    "mathml_present": true,
+    "figures_embedded": true,
+    "css_embedded": true,
+    "browser_visual_inspection": false
+  },
+  "local_links": [
+    {
+      "source": "analysis_report.md",
+      "target": "revised/main_revised.tex",
+      "exists": true
+    },
+    {
+      "source": "analysis_report.md",
+      "target": "revised/main_revised.pdf",
+      "exists": true
+    },
+    {
+      "source": "analysis_report.md",
+      "target": "revised/references.bib",
+      "exists": true
+    },
+    {
+      "source": "analysis_report.md",
+      "target": "source_inventory.md",
+      "exists": true
+    },
+    {
+      "source": "analysis_report.md",
+      "target": "figures/Bothmeasurements.png",
+      "exists": true
+    },
+    {
+      "source": "analysis_report.md",
+      "target": "figures/All_together.png",
+      "exists": true
+    },
+    {
+      "source": "analysis_report.md",
+      "target": "evidence/check_calculations.py",
+      "exists": true
+    },
+    {
+      "source": "analysis_report.md",
+      "target": "evidence/calculation_checks.json",
+      "exists": true
+    },
+    {
+      "source": "analysis_report.md",
+      "target": "author_queries.md",
+      "exists": true
+    },
+    {
+      "source": "analysis_report.md",
+      "target": "work_log.md",
+      "exists": true
+    },
+    {
+      "source": "analysis_report.md",
+      "target": "evidence/validation.json",
+      "exists": true
+    }
+  ],
+  "limitations": [
+    "No raw sample/reference spectra or calibration records in original project.",
+    "No sample identities or preparation replicates independently established.",
+    "No new experimental results or numerical sand uncertainties computed.",
+    "Original figure ST4 pairing and shaded bands unresolved."
+  ]
+}

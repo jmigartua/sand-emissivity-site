@@ -1,0 +1,42 @@
+[
+  {
+    "path": "All_together.pdf",
+    "sha256": "97787a21f908c3369464d682c2958571c8fbdc41a6f0dcdcde587acb6050c2c3"
+  },
+  {
+    "path": "main.tex",
+    "sha256": "ad61c6a314444b167aac36f02e3b33556ed1034f9d58864bf6bd3a098bf98483"
+  },
+  {
+    "path": "sample.bib",
+    "sha256": "8749e6a3009dbbdc5886644c8de1eb8ad98c993cb0613ee349b7b31e83750dd1"
+  },
+  {
+    "path": "Bothmeasurements.pdf",
+    "sha256": "62172be4e9d468eb9f8152409bd5d2afae73dfad9e87367c3793b937066f3985"
+  },
+  {
+    "path": "analysis_2026-10-16/author_queries.md",
+    "sha256": "0548b4af3a777c6461aed26db138d1444d7654330acd73d5b5e15ef11345b3b2"
+  },
+  {
+    "path": "analysis_2026-10-16/source_inventory.md",
+    "sha256": "bc9e9caf533c48e0ccf34858966ff925aab9122ddc64cf9cfaacfa246196980f"
+  },
+  {
+    "path": "analysis_2026-10-16/analysis_report.md",
+    "sha256": "52b90cffc09a2722a3df1ca65d3928bbec1e3b434fb95b95ba21dd7f30644ea1"
+  },
+  {
+    "path": "analysis_2026-10-16/revised/main_revised.pdf",
+    "sha256": "528e0f6dc1e628dddcec1ecc1a26c07ed7651ac442bbd151c5dd754425800250"
+  },
+  {
+    "path": "analysis_2026-10-16/revised/references.bib",
+    "sha256": "13caa8225b74328bffe49b3b5c7a58051f10f158cb0e26e4053de4aa1844b08a"
+  },
+  {
+    "path": "analysis_2026-10-16/revised/main_revised.tex",
+    "sha256": "0f3ede06d86b184baa24a3fc814e82098922be56bf5e3993c8b24a71c04147a3"
+  }
+]

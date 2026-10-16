@@ -1,0 +1,27 @@
+[
+  {
+    "source": "inverse-problems-configuration-space/ecosystem/site/assets/styles/theme.css",
+    "destination": "assets/styles/theme.css",
+    "sha256": "acacbc0fc37d1f8178f6357aeac6e80e6b160b0d0829c98f5f0eff52a6195512"
+  },
+  {
+    "source": "inverse-problems-configuration-space/ecosystem/site/assets/styles/site.css",
+    "destination": "assets/styles/site.css",
+    "sha256": "34f5ec3290c3b17c8a8eb153493a2cd4fa61213483eca69af1f48f98cad44dda"
+  },
+  {
+    "source": "inverse-problems-configuration-space/ecosystem/site/assets/includes/fonts.html",
+    "destination": "assets/includes/fonts.html",
+    "sha256": "5809b5eb3e75b03c6c9c9904ca0cc09c74aba4169ff1d559d4e21957ce26658f"
+  },
+  {
+    "source": "inverse-problems-configuration-space/ecosystem/site/assets/includes/docs-close.html",
+    "destination": "assets/includes/docs-close.html",
+    "sha256": "f18cb5c6c36b55b407b39c5f0d1efe0b7e6f072a0b727b82e5d5b6a8eaa913ad"
+  },
+  {
+    "source": "inverse-problems-configuration-space/ecosystem/site/assets/favicon.svg",
+    "destination": "assets/favicon.svg",
+    "sha256": "9506bb7a34d075d1c669a52d243b85bdbfa997c95415279b6d82af5e3b716c2d"
+  }
+]

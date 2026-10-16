@@ -1,0 +1,140 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage[margin=2.5cm]{geometry}
+\usepackage{amsmath,amssymb,graphicx,booktabs,xcolor,microtype}
+\usepackage[colorlinks=true,allcolors=blue]{hyperref}
+\newcommand{\um}{\ensuremath{\,\mu\mathrm{m}}}
+\newcommand{\aq}[1]{\par\smallskip\noindent{\color{brown}\textbf{Author query.} #1}\par\smallskip}
+\title{Near-normal spectral emissivity estimates of five sand samples from room-temperature reflectance measurements}
+\author{T. Ech\'aniz and I. Urcelay-Olabarria}
+\date{Working revision: 16 October 2026}
+\begin{document}
+\maketitle
+\noindent\textbf{Draft status.} This revision retains the measurements and authorship reported in the supplied draft. It adds the physical interpretation and uncertainty framework. Numerical uncertainty estimates, sample descriptions and the interpretation of the original shaded bands remain to be established. The original figures are reproduced without modifying their data or labels.
+
+\begin{abstract}
+The infrared reflectance spectra of five sand samples, ST1--ST5, were measured at room temperature using a 75~mm integrating sphere at an incidence angle of $13^\circ$. Near-normal directional spectral emissivity was estimated as one minus the directional-hemispherical spectral reflectance, conditional on negligible transmission through the sample bed and adequate collection of the reflected radiation. Two surface preparations, described as levelled and irregular, were compared for each sample. The supplied spectra show broadly similar spectral structures for the two preparations, with reduced emissivity in regions around 3.5--5 and 8--10\um. The latter region is compatible with vibrational reflectance structure in silicate-bearing granular materials, but mineralogical assignments require independent characterization. Larger plotted dispersion at long wavelengths limits interpretation there. These observations establish a preliminary spectral comparison; quantifying preparation effects and differences between samples requires a documented uncertainty budget and independent sample preparations.
+\end{abstract}
+
+\section{Introduction}
+The infrared radiative properties of granular materials depend on both their composition and their physical state. For a sand bed, the observed response can be influenced by mineralogy, particle-size distribution, packing, moisture and the geometry of the exposed surface. Directional-hemispherical reflectance provides a route to estimating directional spectral emissivity at room temperature, provided the assumptions connecting absorption and emission are satisfied \cite{salisbury1992,salisbury1994}.
+
+An important distinction is between changing the macroscopic bed surface and changing the surfaces or sizes of the individual grains. Levelling a sand bed does not make its constituent particles optically smooth. Conversely, irregular preparation may change local slopes, packing and optical path lengths at the same time. Studies of powdered quartz demonstrate that particle size and packing must be considered when interpreting angular and spectral behavior \cite{wald1995}. Moisture is another relevant variable for sandy materials \cite{mira2007}.
+
+The present study compares five sand samples and examines the effect of two bed-surface preparations at a fixed, near-normal incidence angle. The objectives are to document their spectral similarities and differences, identify candidate physical origins of the spectral structures, and determine which conclusions about preparation effects can be supported by the available measurements.
+\aq{Add the origin, intended application and scientific rationale for selecting ST1--ST5. Establish how these samples or the comparison address a question not already resolved by existing sand and soil measurements.}
+
+\section{Experimental method}
+\subsection{Samples and surface preparation}
+The five samples are identified as ST1, ST2, ST3, ST4 and ST5. Each was measured in two conditions: a levelled bed surface and a deliberately irregular bed surface. The individual grains remained present in both conditions. Comparisons between samples below use the levelled preparation, following the supplied draft.
+\aq{Report provenance, mineralogical characterization, grain-size distribution, moisture conditioning, sample mass, bed thickness, holder and backing, filling method, and photographs or quantitative descriptions of the two preparations. State whether levelling involved compaction and how many independently refilled beds were measured. Do not describe the samples as dry or quartz-rich without supporting records.}
+
+\subsection{Reflectance measurement}
+Measurements were performed at room temperature with a 75~mm integrating sphere equipped with a DLaTGS detector. The reported incidence angle was $13^\circ$ relative to the nominal macroscopic surface normal. An Infragold reference was used for the comparison measurement. The original reduction adopted a constant reference reflectance of 0.95. The draft reports 100 scans for both sample and reference and calculation of their mean signals and standard deviations.
+
+At each wavelength, the nominal reduction is
+\begin{equation}
+ \widehat R_{\mathrm{dh}}(\lambda,13^\circ)
+ =R_{\mathrm{ref}}(\lambda)
+ \frac{\overline S_{\mathrm{s}}(\lambda)}{\overline S_{\mathrm{ref}}(\lambda)}.
+ \label{eq:ratio}
+\end{equation}
+Here $R_{\mathrm{dh}}$ denotes directional-hemispherical \emph{spectral} reflectance, and the $S$ quantities denote measured detector signals. This expression assumes that offsets have been removed or shown to be negligible and that the comparison geometry has been validated. The relevant reflectance includes both diffuse and specular contributions. An integrating sphere's collection of reflected directions does not average over incidence directions. Quantitative sphere measurements require attention to alignment, port configuration and sample positioning \cite{blake2018}.
+
+\aq{Identify the spectrometer, sphere model, source, beamsplitter, detector window, beam footprint and angular spread; give the measured temperature, spectral resolution, sampling, apodization, phase correction and atmosphere. Clarify whether the reference was a separate standard or a region of the sphere wall, and whether sample substitution changed sphere loading. Confirm that the specular component was included. Supply the reference calibration spectrum, its uncertainty and validity range. A nominal 0.95 is not a calibration certificate.}
+
+\subsection{Conversion to emissivity and angular definition}
+For a passive reciprocal sample at a specified temperature and material state, conservation of energy and Kirchhoff's law give, for matched spectral, directional and polarization conditions,
+\begin{equation}
+ \varepsilon_{\mathrm d}(\lambda,\theta,\phi,T)
+ =\alpha_{\mathrm d}(\lambda,\theta,\phi,T)
+ =1-R_{\mathrm{dh}}(\lambda,\theta,\phi,T)
+   -\tau_{\mathrm{dh}}(\lambda,\theta,\phi,T).
+ \label{eq:kirchhoff}
+\end{equation}
+For an optically thick bed, with negligible directional-hemispherical transmittance, this becomes
+\begin{equation}
+ \varepsilon_{\mathrm d}(\lambda,13^\circ,T)
+ =1-R_{\mathrm{dh}}(\lambda,13^\circ,T).
+ \label{eq:opaque}
+\end{equation}
+An opaque backing alone does not establish that the sand bed is optically thick: radiation reaching the backing can contribute to the response of the combined bed--holder system. A thickness or backing-dependence test is therefore needed to attribute the measured response to the sand bed itself.
+
+The inferred quantity is described here as \emph{near-normal directional spectral emissivity}. The measurement at $13^\circ$ is not an exact normal measurement and is not a hemispherical emissivity. A conversion to $0^\circ$ would require angular data or a validated angular model. Nor does near-normal agreement between two preparations establish angle-independent behavior. The distinction between directional and hemispherical quantities is also important in the group's previous work on porous coatings and structured surfaces \cite{spinel2019,dlip2025}.
+\aq{Document opacity over the accepted spectral range and whether the incident beam was effectively unpolarized. State that $13^\circ$ is the nominal beam angle if finite beam divergence is relevant.}
+
+\subsection{Uncertainty framework}
+For the nominal model in Eq.~\eqref{eq:ratio}, define $A=\overline S_{\mathrm{s}}$, $B=\overline S_{\mathrm{ref}}$ and $C=R_{\mathrm{ref}}$, so that $R=CA/B$. At each wavelength, first-order propagation gives
+\begin{align}
+ u_c^2(R)={}&\left(\frac{C}{B}\right)^2 u^2(A)
+ +\left(\frac{CA}{B^2}\right)^2 u^2(B)
+ +\left(\frac{A}{B}\right)^2 u^2(C) \notag\\
+ &-\frac{2C^2A}{B^3}\operatorname{cov}(A,B)
+ +\frac{2CA}{B^2}\operatorname{cov}(A,C)
+ -\frac{2CA^2}{B^3}\operatorname{cov}(B,C).
+ \label{eq:uncertainty}
+\end{align}
+This follows the measurement-model approach to uncertainty evaluation \cite{gum2008}. Calibration uncertainty is retained even when scan noise is small. If transmission is negligible and Eq.~\eqref{eq:opaque} is applicable, the absolute standard uncertainties satisfy $u_c(\varepsilon)=u_c(R)$. Their relative uncertainties do not generally coincide.
+
+If $N$ individually available scans are independent realizations of the same stable signal, the Type A standard uncertainty of their mean is $s/\sqrt{N}$, where $s$ is the scan standard deviation. The reported $N=100$ would then give $s/10$. This reduction cannot be applied to an already averaged spectrum without the requisite replicate information, or to independent bed-to-bed variation. Drift and correlation must be assessed separately.
+
+The complete model must also address alignment, reference calibration, offsets, sphere collection, repositioning, atmospheric residuals and sample preparation. Corrections should be included where justified, with their residual uncertainties propagated without double counting. The unfinished statement ``misalignment smaller than 2\%'' does not specify the affected quantity, a distribution or a coverage factor. Consequently, no numerical uncertainty is assigned to that term in this revision. The GUM-based approach is consistent with the group's earlier metrological work, but the input quantities must be those of the present reflectance experiment \cite{gonzalez2020}.
+\aq{Supply the reduction code and clarify whether the shaded regions represent scan standard deviations, standard uncertainties, expanded uncertainties or something else. Report $U=k u_c$ only after specifying $k$ and its coverage interpretation. Where the denominator signal is weak or the linear approximation fails, validate the ratio propagation using a distribution-based calculation.}
+
+\section{Results}
+\subsection{Comparison of the two preparations}
+Figure~\ref{fig:preparation} reproduces the supplied comparisons. For each intended sample pairing, the levelled and irregular preparations have similar overall spectral structure. Some offsets are visible, including at shorter wavelengths; the curves should therefore not be described as universally coincident. The spread of the plotted bands increases markedly toward the long-wavelength end.
+
+These plots alone do not establish statistical equivalence or identify the dominant physical contribution to the measured emissivity. Quantifying a preparation effect requires the wavelength-dependent difference,
+\begin{equation}
+ \Delta\varepsilon=\varepsilon_{\mathrm{irregular}}-\varepsilon_{\mathrm{levelled}},
+ \qquad
+ u^2(\Delta\varepsilon)=u^2(\varepsilon_{\mathrm{irregular}})
+ +u^2(\varepsilon_{\mathrm{levelled}})
+ -2\operatorname{cov}(\varepsilon_{\mathrm{irregular}},\varepsilon_{\mathrm{levelled}}),
+\end{equation}
+with covariance appropriate to shared calibration and acquisition conditions. Independent bed preparations are required to evaluate preparation variability. Equivalence additionally requires a prespecified tolerance relevant to the intended application.
+
+\begin{figure}[p]
+\centering
+\includegraphics[width=.92\linewidth,height=.79\textheight,keepaspectratio]{../../Bothmeasurements.pdf}
+\caption{Original comparison of the levelled (red) and irregular (blue) preparations. Panels are intended to represent (a) ST1, (b) ST2, (c) ST3, (d) ST4 and (e) ST5. Insets enlarge the short-wavelength region. \textbf{Unresolved figure issues:} the blue legend in panel (d) reads ``ST1 rough''; its data identity must be checked. The meaning and coverage of all shaded bands must be supplied.}
+\label{fig:preparation}
+\end{figure}
+
+\subsection{Comparison of the five samples}
+Figure~\ref{fig:samples} compares the levelled preparations over a displayed range extending approximately from 1.5 to 25\um. This displayed range should not be equated with a validated instrument range. The spectra show high emissivity over substantial parts of the mid-infrared, interrupted by depressions around 3.5--5 and 8--10\um. Structure is also visible near 6--7\um. Below approximately 2.5\um, the spectra are lower and more variable, with ST3 visibly separated from several other samples in part of this region. The original blanket estimate of $0.6\pm0.1$ is therefore not retained as a measured value with uncertainty.
+
+Differences among the five samples are visible in the spectral depressions, but their statistical significance and physical origin cannot be established from the rendered curves alone. At long wavelengths, particularly near the upper plotted limit, the large spread requires a quality assessment before the apparent decline can be interpreted quantitatively.
+
+\begin{figure}[p]
+\centering
+\includegraphics[width=\linewidth]{../../All_together.pdf}
+\caption{Original spectra for the levelled preparations of ST1 (black/gray), ST2 (red), ST3 (green), ST4 (blue) and ST5 (magenta). The inset uses a broken wavelength axis to show several regions separately. The shaded regions retain their original, presently undocumented meaning and must not yet be interpreted as confidence intervals.}
+\label{fig:samples}
+\end{figure}
+
+\section{Discussion}
+\subsection{Dielectric and granular-material behavior}
+Sand is a granular material category, not a unique chemical composition. If silicate phases are present, infrared-active lattice vibrations can produce strong spectral changes in reflectance. In a Reststrahlen region, high reflectance can give a minimum in the emissivity of an opaque specimen. It would therefore be misleading to identify every vibrational feature simply as increased absorption and increased emission. The behavior also depends on scattering within the bed and on the optical thickness of its grains and layers \cite{salisbury1992,hewson2012}.
+
+The depression around 8--10\um\ is compatible with the response of silicate-bearing sands. Quartz, feldspars and clay-bearing components are candidates to be tested through mineralogical characterization and spectral comparison under compatible conditions; none is identified by the present data alone. Particle size, packing and moisture can modify the same spectral region \cite{wald1995,mira2007}. A fitted mixture or a single-interface Fresnel model would therefore require independent constraints before it could be used to infer composition.
+
+The 3.5--5\um\ depression is less diagnostic. Mineral overtone and combination bands are possible contributors \cite{salisbury1994}, while residual atmospheric absorption, including the carbon-dioxide band near 4.3\um\ \cite{brukerVacuum}, must be checked in the sample and reference signals. Similarly, structure around 6--7\um\ should be assessed for both material and water-related contributions. Such checks distinguish a physical hypothesis from an assignment of an observed feature.
+
+\subsection{Limits of the preparation comparison}
+Similar spectra after levelling and irregular preparation can indicate limited sensitivity to the particular macroscopic change tested. They cannot show that grain size or grain orientation is the limiting factor, because neither was systematically varied or measured in the supplied record. A stronger comparison would use repeated independent fillings, controlled mass and bed depth, and measurements of the resulting packing and surface morphology.
+
+\subsection{Scope for thermal applications}
+The present results concern a near-normal direction at room temperature. They do not determine total hemispherical emissivity or emissivity at an elevated operating temperature. Spectral integration requires Planck weighting and treatment of unmeasured wavelength intervals; hemispherical integration additionally requires angular information. Even if the spectral shape were temperature independent, its total emissivity would generally change with the Planck weighting. Heating may also change moisture, packing or mineral state. Any application to high-temperature heat loss therefore requires measurements or justified models at the relevant temperatures and geometries.
+
+\section{Conclusions}
+The supplied measurements provide a preliminary comparison of the near-normal infrared response of five sand samples. Under the assumptions of bed opacity and validated collection of directional-hemispherical reflectance, the spectra can be interpreted as directional spectral emissivity estimates at $13^\circ$. The two surface preparations exhibit similar broad spectral features, while intersample differences are visible in selected wavelength regions. A silicate-related interpretation of the 8--10\um\ depression is physically plausible but remains unconfirmed. The next quantitative conclusions depend on establishing sample identity and opacity, recovering the calibration and acquisition records, and evaluating preparation differences with an explicit uncertainty model.
+
+\section*{Data availability and author actions}
+\aq{Provide machine-readable sample and reference spectra, calibration records, scan or repeat-level data and processing code. Resolve the ST4 figure identity and define the shaded bands. Add funding, affiliations, contributions and data availability statements from verified records. Remove the draft-status paragraph and all author queries only after the corresponding points have been resolved.}
+\bibliographystyle{unsrt}
+\bibliography{references}
+\end{document}

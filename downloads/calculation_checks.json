@@ -1,0 +1,27 @@
+{
+  "label": "Illustrative physical calculations, not experimental results",
+  "checks": {
+    "ratio_gradient_finite_difference": true,
+    "blackbody_normalization": true,
+    "shared_scale_covariance_cancellation": true
+  },
+  "planck_fractions_300K": {
+    "3-18 um": 0.6802482058094866,
+    "1.5-25 um": 0.8343665877529288,
+    "8-14 um": 0.37574229364592443,
+    "3-5 um": 0.012763052753728759
+  },
+  "uncertainty_example": {
+    "R": 0.1,
+    "epsilon": 0.9,
+    "u_R_relative": 0.02,
+    "u_R_absolute": 0.002,
+    "u_epsilon_absolute": 0.002,
+    "u_epsilon_relative": 0.0022222222222222222
+  },
+  "misalignment_example_relative_rectangular_half_width_0_02": {
+    "u_relative": 0.011547005383792516,
+    "u_epsilon_at_R_0_1": 0.0011547005383792516
+  },
+  "angle_13_deg_squared_radians": 0.05148034394395375
+}

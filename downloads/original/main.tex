@@ -1,0 +1,71 @@
+\documentclass[12pt]{article}
+
+% Language setting
+% Replace `english' with e.g. `spanish' to change the document language
+\usepackage[english]{babel}
+
+% Set page size and margins
+% Replace `letterpaper' with `a4paper' for UK/EU standard size
+\usepackage[a4paper,top=2cm,bottom=2cm,left=3cm,right=3cm,marginparwidth=1.75cm]{geometry}
+
+% Useful packages
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage[colorlinks=true, allcolors=blue]{hyperref}
+
+\title{Emissivity measurements on sand}
+\author{T. Echániz and I. Urcelay-Olabarria}
+
+\begin{document}
+\maketitle
+
+%\begin{abstract}
+%Your abstract.
+%\end{abstract}
+
+\section{Introduction}
+
+We report normal emissivity measurements at room temperatures of different sand samples: ST1, ST2, ST3, ST4 and ST5.
+
+
+
+\section{Experimental details}
+
+The emissivity of different sand-samples have been calculated based on reflectivity measurements at room-temperature. The directional-hemispherical total reflectance was measured with an integrating sphere at an incident angle of 13°. That integrating sphere has a diameter of 75 mm, and is equipped with a DLaTGS detector. The usual comparison measurement method has been used, by comparing the radiance reflected by the sample to that reflected by an Infragold reference ($R_{ref}=0.95$). The reflectivity of the sample, $R_s$, is obtained as following:
+
+\begin{equation}
+    R_s = \frac{S_s}{S_{ref}}\times R_{ref}
+\end{equation}
+being $S_s$ and $S_{ref}$ the measured sample signal and the reference signal, respectively.\\
+
+In each experiment we have collect 100 scans, and we have calculated the mean value and its corresponding standard deviation; for both, the sample and the reference. \textit{In order to calculate the error of the measurement, it has been considered as a combination of the misalignment (smaller than 2\%),....} \\
+
+\textit{The standard uncertainty is taken as the combination of the uncertainties due to the signal to noise ratio in the sample and reference reflectance data. It is small 2\% in the $\lambda < 10$ $\mu$m range, but increases rapidly at higher wavelengths due to the low signal from the source in that range.} \\%An additional source of systematic uncertainty beyond 15 $\mu$μm is the increasingly non-Lambertian nature of the Infragold coating.
+
+Finally, the emissivity, $\epsilon$ is calculated as 
+
+\begin{equation}
+   \epsilon=1-R_{s}.
+\end{equation}
+
+The emissivity of a material depends strongly on its surface conditions. Since the sample is already very irregular, with different sand-grains oriented in different directions, two different measurements were carried out, on each sample, to see if the conditions of the surface of the samples affected the measurements. In the first experiment, the surface of the sand-sample was smoothed, whereas for the second measurement, the surface was very irregular. The results plotted in Fig. \ref{fig:bothmeasurements} show that the emissivity measurements barely change due to surface conditions. In fact, in all the cases both curve collapse at low wavelengths, as observed in the insets. Small deviations can be observed at high wavelengths, where the experimental errors are relatively bigger. Thus, these measurements suggest that the intrinsic characteristics (grain size and arbitrary orientation) of the sand the limiting factors for this experiment. From now on, all the presented results will correspond to those samples with smoothed surface.   \\
+
+Falta cometar algo sobre el comportamiento de los materiales ceramicos. Y sobre el angulo. \\
+
+\begin{figure}
+\centering
+\includegraphics[width=1\linewidth]{bothmeasurements.pdf}
+\caption{\label{fig:bothmeasurements}Emissivity measurements of sand samples: (a) ST1, (b) ST2, (c) ST3, (d) ST4 and (e) ST5. For each samples measurements were carried out in two different conditions: The red curve corresponds to the sample with smoothed surface, whereas the blue one corresponds to the same sample with rough surface. The details at low wavelengths are shown in the inset. }
+\end{figure}
+
+With the aim of comparing the behavior of the five samples, the data have been plotted in Fig. \ref{fig:All_together}. The emissivity of all the samples are very close to 0,9 for wavelengths between 3 to 18 cm$^{-1}$. At lower values of $\lambda$, the emissivity decreases down to about 0,6$\pm$0,1. There are two intermediate regions where there is a significant decrease of the emissivity: from 3,5 $\mu$m to 5 $\mu$m, and from 8 $\mu$m to 10 $\mu$m. Moreover, it is in those regions where the samples present the biggest deviations. So far, we suggest carrying out a more rigorous characterization of the samples to determine the origin of those effects.
+
+\begin{figure}
+\centering
+\includegraphics[width=1\linewidth]{All_together.pdf}
+\caption{\label{fig:All_together}Emissivity measurements of  ST1, ST2, ST3, ST4 and ST5 sand-samples represented in black, red, green, blue and pink lines, respectively. The inset shows the areas where the emissivity of the samples exhibit slightly unequal behavior. }
+\end{figure}
+
+
+
+\end{document}
