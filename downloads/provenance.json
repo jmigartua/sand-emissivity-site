@@ -2,7 +2,7 @@
   "date": "2026-10-16",
   "status": "public working edition",
   "generator": "ecosystem/tools/build.py",
-  "source_commit": "60290e4fa15786b982b2991f81bf6a3d7479fe56",
+  "source_commit": "985548fb159f6bc83cd49f5810c2a24b151a4427",
   "inputs": {
     "ecosystem/data/nav.yml": "8f0c5f12a6e1264c01f67867877c7f980817b2dc10de844d5a2c6515a02d4fd2",
     "ecosystem/content/index.md": "df251dd2b07a8d20e37f00dad285ebf27a675eb3a623153787cf1787fb537697",
